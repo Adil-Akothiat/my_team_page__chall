@@ -1,0 +1,194 @@
+@import url("https://fonts.googleapis.com/css2?family=PT+Serif:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  width: 85%;
+  margin: auto;
+  color: black;
+  padding: 50px 0 20px 0;
+}
+
+img {
+  width: 100%;
+}
+
+header {
+  margin-bottom: 2.8em;
+}
+
+header h1 {
+  font-size: 32px;
+  font-family: "PT Serif", sans-serif;
+  font-weight: 700;
+  margin-bottom: 30px;
+}
+
+header h2 {
+  font-size: 18px;
+  font-weight: 600;
+  font-family: "Poppins", sans-serif;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+}
+
+header p {
+  font-size: 14px;
+  line-height: 21px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+}
+
+section {
+  margin-bottom: 8em;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (auto)[2];
+      grid-template-columns: repeat(2, auto);
+  -webkit-column-gap: 30px;
+          column-gap: 30px;
+  row-gap: 5px;
+}
+
+section div {
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  position: relative;
+  cursor: pointer;
+  -webkit-transition: 340ms;
+  transition: 340ms;
+}
+
+section div span {
+  text-transform: uppercase;
+  font-weight: 400;
+  -webkit-writing-mode: vertical-lr;
+      -ms-writing-mode: tb-lr;
+          writing-mode: vertical-lr;
+  font-size: 10px;
+  font-family: 'PT Serif', sans-serif;
+  position: absolute;
+  top: 0;
+}
+
+section div:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+
+section h3 {
+  font-size: 14px;
+  font-weight: 600;
+  font-family: "Poppins", sans-serif;
+  text-transform: capitalize;
+}
+
+section img {
+  width: 100%;
+  max-height: 100%;
+}
+
+section .mv {
+  margin-top: 80px;
+}
+
+@media screen and (min-width: 350px) {
+  header p {
+    width: 300px;
+  }
+}
+
+@media screen and (min-width: 500px) {
+  body {
+    width: 80%;
+  }
+}
+
+@media screen and (min-width: 600px) {
+  body {
+    width: 81%;
+  }
+  section div span {
+    font-size: 12px;
+  }
+  section div h3 {
+    font-size: 18px;
+  }
+}
+
+@media screen and (min-width: 900px) {
+  body {
+    width: 85%;
+  }
+  header {
+    margin-bottom: 6em;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: start;
+  }
+  header h1 {
+    font-size: 36px;
+  }
+  header h2 {
+    font-size: 18px;
+    font-weight: 600;
+  }
+  header p {
+    width: 350px;
+    font-size: 16px;
+    font-weight: 400;
+  }
+  section {
+    -ms-grid-columns: (auto)[3];
+        grid-template-columns: repeat(3, auto);
+    row-gap: 5em;
+    -webkit-column-gap: 5em;
+            column-gap: 5em;
+  }
+  section .mv {
+    margin: 0;
+  }
+  section div {
+    height: 310px;
+  }
+  section div img {
+    width: 200px;
+    -o-object-fit: cover;
+       object-fit: cover;
+    height: 100%;
+  }
+  section div span {
+    margin-left: 8px;
+  }
+  section .m__v {
+    margin-top: 80px;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  body {
+    width: 78%;
+  }
+}
+
+@media screen and (min-width: 1100px) {
+  body {
+    width: 70%;
+  }
+}
+/*# sourceMappingURL=style.css.map */
